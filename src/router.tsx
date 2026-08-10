@@ -1,11 +1,15 @@
-import { createBrowserRouter } from 'react-router-dom'
+import { createBrowserRouter } from 'react-router-dom';
 
 export const router = createBrowserRouter([
   {
     children: [
       {
         path: '/',
-        element: <h1>Formulário de Simulação</h1>,
+        element: (
+          <>
+          <h1>Formulário de Simulação</h1>
+          </>
+        )
       },
       {
         path: '/resultado',
