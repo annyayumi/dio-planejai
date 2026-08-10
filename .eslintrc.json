@@ -1,0 +1,36 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": [
+    "unused-imports",
+    "simple-import-sort",
+    "prettier"
+  ],
+  "rules": {
+    "prettier/prettier": "error",
+    
+    // Regra para remover imports não utilizados automaticamente
+    "no-unused-vars": "off",
+    "unused-imports/no-unused-imports": "error",
+    "unused-imports/no-unused-vars": [
+      "warn",
+      {
+        "vars": "all",
+        "varsIgnorePattern": "^_",
+        "args": "after-used",
+        "argsIgnorePattern": "^_"
+      }
+    ],
+
+    // Regras para ordenação automática dos imports
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error"
+  }
+}
