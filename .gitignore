@@ -26,6 +26,7 @@ dist-ssr
 # Variáveis de ambiente
 .env
 .env.production
+.env.local
 
 # Cache
 .cache
